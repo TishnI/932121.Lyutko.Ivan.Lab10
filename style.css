@@ -1,0 +1,163 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.curtain
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+    transition-property: bottom;
+    transition-duration: 2s;
+}
+
+.curtain__image
+{
+    width: 100%;
+    height: 100%;
+    background-image: url("./img/1.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: 0.2s;
+}
+
+.curtain__image:hover
+{
+    background-position: center bottom calc(100vh * 0.05);
+    transition: 0.2s;
+}
+
+.wrapper
+{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lamp-container
+{
+    display: flex;
+    justify-content: center;
+}
+.lamp
+{
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    position: relative;
+}
+
+img
+{
+    width: 100%;
+}
+
+.lamp-top
+{
+    width: 100px;
+    position: absolute;
+    z-index: 100;
+}
+
+.lamp-switch
+{
+    width: 8px;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    transition-property: top;
+    transition-duration: 0.2s;
+}
+
+.lamp-base
+{
+    width: 50px;
+    padding-top: 50px;
+
+}
+
+.lamp-light
+{
+    position: absolute;
+    border-left: 500px solid transparent;
+    border-right: 500px solid transparent;
+    border-bottom: 900px solid yellow;
+    width: 1030px;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+}
+
+.scene-container
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.scene
+{
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+}
+
+.magician
+{
+    max-width: 400px;
+}
+
+.hat
+{   position: relative;
+    max-width: 200px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.hat__image
+{
+    transform: rotate(180deg);
+    z-index: 5;
+}
+
+.animals-in-hat
+{
+    width: 80px;
+    position: absolute;
+    top: 10px;
+}
+
+.bird__image
+{
+    position: absolute;
+    top: 0;
+    transition-property: top;
+    transition-duration: 0.5s;
+}
+.rabbit__image
+{
+    position: absolute;
+    top: 0;
+    transition-property: top;
+    transition-duration: 0.5s;
+}
