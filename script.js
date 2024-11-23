@@ -8,12 +8,12 @@ var lampSwitchElement = document.querySelector('.js-lamp-switch');
 var lampIsOn = false;
 
 lampSwitchElement.addEventListener('mousedown', function(){
-    this.style.top = "130px";
+    this.style.top = "50px";
 })
 
 var lightElement = document.querySelector('.js-lamp-light');
 lampSwitchElement.addEventListener('mouseup', function(){
-    this.style.top = '110px';
+    this.style.top = '30px';
     lampIsOn = !lampIsOn;
     console.log(lampIsOn);
 

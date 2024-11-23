@@ -44,13 +44,19 @@ body
 .lamp
 {
     position: absolute;
-    top: 0;
+    top: 20px;
     z-index: 10;
-    left: calc(100vw*0.5 - 250px);  
+    left: calc(100vw*0.5 - 100px);  
+}
+
+.lamp img
+{
+    width: 100%;
 }
 
 .lamp-top
 {
+    width: 100px;
     position: absolute;
     z-index: 2;
     pointer-events: none;
@@ -58,22 +64,31 @@ body
 
 .lamp-switch
 {
+    width: 8px;
     position: absolute;
-    top: 110px;
-    left: 200px;
+    top: 30px;
+    left: 20px;
     transition-property: top;
     transition-duration: 0.2s;
+}
+
+.lamp-base
+{
+    width: 50px;
+    position: absolute;
+    top: 50px;
+    left: 23px;
 }
 
 .lamp-light
 {
     position: absolute;
-    top: 70px;
-    left: -35px;
-    border-left: 250px solid transparent;
-    border-right: 250px solid transparent;
-    border-bottom: 700px solid yellow;
-    width: 575px;
+    top: 0;
+    left: -465px;
+    border-left: 500px solid transparent;
+    border-right: 500px solid transparent;
+    border-bottom: 900px solid yellow;
+    width: 1030px;
     height: 0;
     opacity: 0;
     pointer-events: none;
